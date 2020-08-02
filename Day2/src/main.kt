@@ -1,11 +1,8 @@
-fun main() {
-    var x = 1
-
-
-    while (x < 3) {
-    print(if (x==1)"yab" else "dab")
-        print("ba")
-        x=x+1
-    }
-    if (x==3) println("do")
+fun main(arg: Array<String>) {
+    val d = DrumKit(true, true)
+    d.playTopHat()
+    d.playSnare()
+    d.hasSnare = false
+    d.playTopHat()
+    d.playSnare()
 }
